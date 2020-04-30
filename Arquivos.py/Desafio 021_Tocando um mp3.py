@@ -1,6 +1,6 @@
 # Faça um programa em Python que abra e reproduza o aúdio de um arquivo mp3.
 '''
-Outra forma: 
+Outra forma:
 
 import pyglet
 music = pyglet.resource.media('capoeira.mp3')
