@@ -6,7 +6,7 @@ area = lar*alt
 
 print('A área total mede:', area,'m²')
 
-lata_tinta = 18
+lata_tinta = 2
 
 l_tot = area/lata_tinta
 

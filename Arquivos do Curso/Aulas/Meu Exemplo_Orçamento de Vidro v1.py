@@ -1,6 +1,6 @@
 
-altura = int(input('Digite a Altura (cm): '))
-largura = int(input('Digite a Largura (cm): '))
+altura = float(input('Digite a Altura (cm): '))
+largura = float(input('Digite a Largura (cm): '))
 
 metro_quadrado = altura * largura
 

@@ -4,7 +4,7 @@ necessários para vencer.
 '''
 from random import randint
 
-computador = randint(0, 2)
+computador = randint(0, 4)
 
 acertou = False
 cont_palpite = 0
