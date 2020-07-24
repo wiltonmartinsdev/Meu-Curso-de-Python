@@ -80,39 +80,29 @@ print('\n{:=^56}'.format(' EXEMPLO 20 '))
 a = (2, 5, 4)
 b = (5, 8, 1, 2)
 c = b + a
-print(c)
+print(len(c))
 
 print('\n{:=^56}'.format(' EXEMPLO 21 '))
 a = (2, 5, 4)
 b = (5, 8, 1, 2)
 c = b + a
-print(len(c))
-
-print('\n{:=^56}'.format(' EXEMPLO 22 '))
-a = (2, 5, 4)
-b = (5, 8, 1, 2)
-c = b + a
 print(c.count(5))
 
-print('\n{:=^56}'.format(' EXEMPLO 23 '))
+print('\n{:=^56}'.format(' EXEMPLO 22 '))
 a = (2, 5, 4)
 b = (5, 8, 1, 2)
 c = b + a
 print(c)
 print(c.index(2)) # Quando tem dois números iguais em sequência, o c.index() irá mostrar sempre a primeira ocorrência do número em questão.
 
-print('\n{:=^56}'.format(' EXEMPLO 24 '))
+print('\n{:=^56}'.format(' EXEMPLO 23 '))
 a = (2, 5, 4)
 b = (5, 8, 1, 2)
 c = b + a
 print(c)
 print(c.index(5, 1)) # Faz a busca do número 5 a partir do índice 1.
 
-print('\n{:=^56}'.format(' EXEMPLO 25 '))
+print('\n{:=^56}'.format(' EXEMPLO 24 '))
 pessoa = ('Wilton', 31, 'M', 64.5)
 print(pessoa)
 
-print('\n{:=^56}'.format(' EXEMPLO 26 '))
-pessoa = ('Wilton', 31, 'M', 64.5)
-del(pessoa)
-print(pessoa)

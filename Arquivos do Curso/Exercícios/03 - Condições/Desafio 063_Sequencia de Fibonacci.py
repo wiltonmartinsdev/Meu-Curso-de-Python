@@ -29,7 +29,7 @@ print('Você encerrou o programa!')
 print('Foram mostrados ao todo: {} termos.'.format(cont-1))
 
 '''
-Minhas Outra Solução:
+Minha Outra Solução:
 
 quant_termo = int(input('Quantos termos você deseja mostrar da sequência de Fibonacci: '))
 t1 = 0
