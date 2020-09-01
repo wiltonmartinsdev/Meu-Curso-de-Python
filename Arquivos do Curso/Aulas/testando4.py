@@ -1,17 +1,29 @@
+'''Aprimore o desafio anterior, mostrando no final:
+1 - A soma de todos os valores pares digitados.
+2 - A soma dos valores da terceira coluna.
+3 - O maior valor da segunda linha.
+'''
 
-altura = int(input('Digite a Altura (cm): '))
-largura = int(input('Digite a Largura (cm): '))
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+soma_par = soma_terceira = maior_valor = soma_valor = 0
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para a posição [{l}] [{c}]: '))
+        soma_valor += matriz[l][c]    
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^4}]', end=' ')
+        if matriz[l][c] % 2 == 0:
+            soma_par += matriz[l][c]
+    print()
+print(f'A soma de todos os valores pares digitados é: {soma_par}')
 
-metro_quadrado = altura * largura
+for l in range(0, 3):
+    soma_terceira += matriz[l][2]
+print(f'A soma dos valores da terceira coluna é: {soma_terceira}')
 
-print('A altura: {} cm e a largura: {} cm'.format(altura, largura))
-print('Total de Metros Quadrados a ser utilizados: {} cm'.format(metro_quadrado))
-
-valor_metro_quadrado = int(input('Digite o Valor do Metro Quadrado R$: '))
-
-preco_total = (metro_quadrado * valor_metro_quadrado) / 100
-
-print('O valor total a ser pago será de: R$ {}'.format(preco_total))
-
-
-
+for c in range(0, 3):
+    if matriz[1][c] > maior_valor:
+        maior_valor = matriz[1][c]
+print(f'O maior valor da segunda linha é: {maior_valor}')
+print(f'A soma de todos os valores é: {soma_valor}')

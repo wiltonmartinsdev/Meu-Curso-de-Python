@@ -4,7 +4,7 @@ for c in range(0, 5):
     n = int(input('Digite um valor: '))
     if c == 0 or n > lista_numero[-1]:
         lista_numero.append(n)
-        print('Adicionado ao final da lista.')
+        print('Adicionado ao final da lista...')
     else:
         pos = 0
         for pos in range(0, 5):
@@ -13,4 +13,4 @@ for c in range(0, 5):
                 print(f'Adicionado na posição {pos} da lista...')
                 break
             pos += 1
-print(lista_numero)
+print(f'Os valores digitados em ordem foram {lista_numero}')

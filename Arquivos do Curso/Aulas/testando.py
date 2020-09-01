@@ -1,7 +1,12 @@
-from random import randint
-
-a = tuple(randint(1, 10) for i in randint(1, 101))
-
-a = tuple(i for i in range(1, 101))
-
-print(a)
+nome = list()
+relacao = list()
+nome.append('wilton')
+nome.append(31)
+relacao.append(nome[:])
+nome[0] = 'cesar'
+nome[1] = 32
+relacao.append(nome[:])
+nome[0] = 'martins'
+nome[1] = 30
+relacao.append(nome)
+print(relacao)

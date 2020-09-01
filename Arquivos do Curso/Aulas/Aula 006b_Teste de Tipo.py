@@ -1,4 +1,2 @@
 n = input('Digite algo: ')
-
-print(n.isdecimal())
-
+print(n.isnumeric())
