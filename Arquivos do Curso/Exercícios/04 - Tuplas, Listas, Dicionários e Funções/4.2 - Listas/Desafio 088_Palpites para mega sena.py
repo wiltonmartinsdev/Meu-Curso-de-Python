@@ -3,6 +3,9 @@ from random import randint
 from time import sleep
 palpites = list()
 jogos = list()
+print('{:=^62}'.format(' MEGA-SENA '))
+print(' A loteria que paga milhões para o acertador dos seis números. ')
+print('=' * 62)
 quantidade = int(input('Quantos jogos você deseja sortear? '))
 total = 1
 while total <= quantidade:
@@ -12,7 +15,7 @@ while total <= quantidade:
         if num not in palpites:
             palpites.append(num)
             cont += 1
-        if cont >= 6:
+        if cont == 6:
             break
     palpites.sort()
     jogos.append(palpites[:])
@@ -22,4 +25,5 @@ print('Processando seu jogo...')
 for i, p in enumerate(jogos):
     sleep(1)
     print(f'{i+1}º Jogo: {p}')
-print('Jogo Processado com Sucesso. Tenha uma Boa Sorte!')
+print()
+print('JOGO PROCESSADO COM SUCESSO. BOA SORTE!')
