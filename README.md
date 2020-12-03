@@ -1,2 +1,2 @@
 # Meu Curso de Python
- Curso em Vídeo
+ Curso de Aprendizagem: Curso em Vídeo
